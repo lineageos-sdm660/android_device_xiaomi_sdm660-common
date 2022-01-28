@@ -440,8 +440,8 @@ vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql|0fdf4b6ccb489
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql|9a76d5747da2876b87b214579c9d74ae92d218d7
 
 # Radio - IMS - from S62Pro
-system_ext/lib64/lib-imscamera.so|49ead972646b09d700556d63676673b3e8af2036
-system_ext/lib64/lib-imsvideocodec.so|ee8ba719d4d73998f45c131f6d90e638f31ecded
+system_ext/lib64/lib-imscamera.so|49ead972646b09d700556d63676673b3e8af2036|8f9cf8dc8fb88493959b48bd55fe7a5afb133899
+system_ext/lib64/lib-imsvideocodec.so|ee8ba719d4d73998f45c131f6d90e638f31ecded|0d1d54f6bc0c01fc4e08c44aa1be58e3563cdef5
 system_ext/lib64/lib-imsvt.so|353df5991439224f0cdb2e3439ec0f618fe2bb24
 system_ext/lib64/lib-imsvtextutils.so|336c0ffed49a0a4605f41b488771ee0217fa80f0
 system_ext/lib64/lib-imsvtutils.so|b4a39a247f767723ce67182ee92f526c029a019d
