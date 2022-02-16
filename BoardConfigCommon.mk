@@ -31,6 +31,7 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a73
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 1
 BOARD_KERNEL_CMDLINE := \
+    androidboot.boot_devices=soc/c0c4000.sdhci \
     androidboot.configfs=true \
     androidboot.hardware=qcom \
     androidboot.usbcontroller=a800000.dwc3 \
