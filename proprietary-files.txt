@@ -80,7 +80,7 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|ece3dafc4447e8302109851c3a
 vendor/bin/hvdcp_opti|120837d6d44abfd86515731dd26183be9cdd5596
 
 # CNE - from S62Pro
-vendor/app/CneApp/CneApp.apk|c228e10dcfa07acc1eeedc5557573d3fc5f09f37
+vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink|c228e10dcfa07acc1eeedc5557573d3fc5f09f37
 vendor/app/IWlanService/IWlanService.apk|ba85c316c0106173f7b2d14d38da5fabad6a8ddd
 vendor/bin/cnd|67a5c1fa6e74863086bc0d258543006df55decef
 vendor/etc/cne/mwqem.conf|c51d3893b86ab89fae218f3a92c4f9c18ea401a8

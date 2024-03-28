@@ -373,7 +373,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
 
-# QMI
+# QTI fwk-detect
 PRODUCT_PACKAGES += \
     libjson \
     libqti_vndfwk_detect \
