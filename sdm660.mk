@@ -227,6 +227,7 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.base@1.0.vendor \
     android.hidl.memory@1.0.vendor \
+    libhidlmemory.vendor:64 \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -255,6 +256,10 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc
+
+# ION
+PRODUCT_PACKAGES += \
+    libion.vendor
 
 # IPACM
 PRODUCT_PACKAGES += \
@@ -371,8 +376,10 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
+    libnetutils.vendor \
     libprotobuf-cpp-full \
     librmnetctl \
+    libsqlite.vendor:64 \
     rild
 
 PRODUCT_PACKAGES += \
@@ -393,7 +400,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@1.0-impl:64 \
-    android.hardware.sensors@1.0-service
+    android.hardware.sensors@1.0-service \
+    libpower.vendor
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
