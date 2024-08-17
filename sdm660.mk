@@ -55,8 +55,7 @@ PRODUCT_COPY_FILES += \
 
 # ANT+
 PRODUCT_PACKAGES += \
-    AntHalService-Soong \
-    com.dsi.ant@1.0.vendor
+    AntHalService-Soong
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -65,9 +64,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio@2.1-impl:32 \
     android.hardware.soundtrigger@2.1-impl:32
-
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.bluetooth_audio@2.0.vendor
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
@@ -103,20 +99,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
 
-# Bluetooth
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor
-
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl:32 \
     android.hardware.camera.provider@2.4-service
-
-PRODUCT_PACKAGES += \
-    libdng_sdk.vendor \
-    vendor.qti.hardware.camera.device@1.0:64
 
 # Component overrides
 PRODUCT_COPY_FILES += \
@@ -157,30 +143,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
-PRODUCT_PACKAGES += \
-    android.frameworks.displayservice@1.0_32 \
-    android.frameworks.displayservice@1.0.vendor \
-    android.frameworks.displayservice@1.0 \
-    libdisplayconfig \
-    libgralloc.qti \
-    libqdMetaData \
-    libqdMetaData.system \
-    libtinyxml \
-    vendor.display.config@2.0 \
-    vendor.qti.hardware.display.mapper@1.1.vendor \
-    vendor.qti.hardware.display.mapper@2.0.vendor
-
 # Doze
 PRODUCT_PACKAGES += \
     XiaomiDoze
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm-service.clearkey \
-    libcrypto_shim.vendor
-
-PRODUCT_PACKAGES += \
-    android.hardware.drm@1.3.vendor
+    android.hardware.drm-service.clearkey
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -190,24 +159,16 @@ PRODUCT_PACKAGES += \
 ifeq ($(BOARD_HAVE_QCOM_FM),true)
 PRODUCT_PACKAGES += \
     FM2 \
-    libqcomfm_jni \
-    qcom.fmradio \
-    qcom.fmradio.xml
+    qcom.fmradio
 endif
-
-# Gatekeeper
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor
 
 # GNSS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.0.vendor \
     android.hardware.gnss@2.0-impl-qti \
     android.hardware.gnss@2.0-service-qti \
     libbatching \
     libgeofencing \
     libgnss \
-    libsensorndkbridge \
     libwifi-hal-ctrl
 
 PRODUCT_COPY_FILES += \
@@ -226,18 +187,6 @@ ifneq ($(AB_OTA_UPDATER),true)
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti_recovery
 endif
-
-# HIDL
-PRODUCT_PACKAGES += \
-    android.hidl.allocator@1.0.vendor \
-    android.hidl.base@1.0 \
-    android.hidl.base@1.0.vendor \
-    android.hidl.memory@1.0.vendor \
-    libhidlmemory.vendor:64 \
-    libhidltransport \
-    libhidltransport.vendor \
-    libhwbinder \
-    libhwbinder.vendor
 
 # IDC
 PRODUCT_COPY_FILES += \
@@ -265,10 +214,6 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_sdm660)
 
-# ION
-PRODUCT_PACKAGES += \
-    libion.vendor
-
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
@@ -286,10 +231,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
-
-# Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0.vendor
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -310,14 +251,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
-
-# Mlipay
-PRODUCT_PACKAGES += \
-    vendor.xiaomi.hardware.mlipay@1.1.vendor
-
-# Netd
-PRODUCT_PACKAGES += \
-    android.system.net.netd@1.1.vendor
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -347,7 +280,6 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2.vendor \
     android.hardware.power-service.lineage-libperfmgr
 
 PRODUCT_COPY_FILES += \
@@ -357,13 +289,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel
-
-# Protobuf
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-3.9.1-vendorcompat \
-    libprotobuf-cpp-full-vendorcompat \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat \
-    libprotobuf-cpp-lite-vendorcompat
 
 # Public libraries
 PRODUCT_COPY_FILES += \
@@ -375,29 +300,7 @@ PRODUCT_COPY_FILES += \
 
 # QTI fwk-detect
 PRODUCT_PACKAGES += \
-    libjson \
-    libqti_vndfwk_detect \
-    libqti_vndfwk_detect.vendor \
-    libvndfwk_detect_jni.qti \
-    libvndfwk_detect_jni.qti.vendor
-
-# RIL
-PRODUCT_PACKAGES += \
-    libavservices_minijail.vendor \
-    libnetutils.vendor \
-    libprotobuf-cpp-full \
-    librmnetctl \
-    libsqlite.vendor:64 \
-    rild
-
-PRODUCT_PACKAGES += \
-    android.hardware.radio@1.5 \
-    android.hardware.radio@1.5.vendor \
-    android.hardware.radio.config@1.2 \
-    android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.secure_element@1.2 \
-    android.hardware.secure_element@1.2.vendor \
+    libvndfwk_detect_jni.qti.vendor # Needed by CNE app
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
@@ -406,10 +309,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0.vendor \
-    android.hardware.sensors@1.0-impl:64 \
-    android.hardware.sensors@1.0-service \
-    libpower.vendor
+    android.hardware.sensors@1.0-service
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -441,10 +341,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.legacy
-
-# VNDK
-PRODUCT_PACKAGES += \
-    libutils-v33
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
