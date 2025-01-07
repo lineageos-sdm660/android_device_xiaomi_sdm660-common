@@ -281,11 +281,11 @@ vendor/lib/libgcs.so|91e2a7e52bbc076eb3761586bcaf623160612a79
 vendor/lib/libsmwrapper.so|d28c31e4dd25de2eb7d1face701b0f6acf1b1d0e
 
 # Media - from jasmine
-lib/libFileMux.so|79661e6dffc90234ad446641264fd0fa1a3fe6ab
-lib/libOmxMux.so|1ad1aa835a3dfb8bfea2a29291f82a173ba6a868
-lib/libmmosal.so|9464733295e192301b2577f52fab720e72c0d152
-lib/libmmparser_lite.so|f4c24fd214acfb32ebbdd1e8ff361c886237f490
-lib64/libmmosal.so|9ceff2581e86d32bc2795dffb96ebe4bdc88f2f7
+system/lib/libFileMux.so|79661e6dffc90234ad446641264fd0fa1a3fe6ab
+system/lib/libOmxMux.so|1ad1aa835a3dfb8bfea2a29291f82a173ba6a868
+system/lib/libmmosal.so|9464733295e192301b2577f52fab720e72c0d152
+system/lib/libmmparser_lite.so|f4c24fd214acfb32ebbdd1e8ff361c886237f490
+system/lib64/libmmosal.so|9ceff2581e86d32bc2795dffb96ebe4bdc88f2f7
 vendor/lib/libOmxVideoDSMode.so|a5a6bd8e1fe4ee4ceb11ba77fae441435a4ae207
 vendor/lib/libgpustats.so|51338b96a0a61b1062a11723c86faba3c1f1d58e
 vendor/lib/libmm-color-convertor.so|43d7d4ac5587ecf5a7e8428e0437f45254acd767
@@ -511,7 +511,7 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|a5f9d28f7adbfbf349e6f5
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so|460e589128fce0b0e83bb3c75aa32f7e1a9494fd
 
 # Soter - from jason V12.0.1.0.PCHCNXM
-app/SoterService/SoterService.apk|c6c6063f83588db6c572779624458a4d1f094213
+system/app/SoterService/SoterService.apk|c6c6063f83588db6c572779624458a4d1f094213
 
 # Soter - from jasmine
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|4f7e3c8a6cde9efefd8b9bf440fb1ed442e21fd3
