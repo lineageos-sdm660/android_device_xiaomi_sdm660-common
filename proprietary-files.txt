@@ -173,7 +173,7 @@ vendor/lib64/libsecureui_svcsock.so|6af612f057f4f28720d6db9b300b58c883da6539
 vendor/lib64/libssd.so|774488b88c37053067b3cad551ac95360c03edd3
 
 # FM - from S62Pro
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|f6e23f902b7e15232b20af55161a24da93ffe25f
+vendor/lib64/vendor.qti.hardware.fm@1.0.so;MODULE_SUFFIX=_vendor|f6e23f902b7e15232b20af55161a24da93ffe25f
 
 # GPS - from jasmine
 vendor/bin/loc_launcher|d0d1465a7f8eb24c50b3c616dccaf68b3dc7888a
