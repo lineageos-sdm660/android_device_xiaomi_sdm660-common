@@ -1,6 +1,5 @@
 /*
- * Copyright 2016 The Android Open Source Project
- *
+ * SPDX-FileCopyrightText: 2016 The Android Open Source Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
