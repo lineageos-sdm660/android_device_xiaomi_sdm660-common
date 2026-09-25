@@ -109,14 +109,14 @@ on boot
     setprop sys.usb.configfs 1
     write /sys/module/usb_f_qcrndis/parameters/rndis_dl_max_xfer_size 15916
 
+    # Touchpanel
+    chown system system /sys/touchpanel/double_tap
+
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
 
 on property:vendor.usb.controller=*
     setprop sys.usb.controller ${vendor.usb.controller}
-
-    # Touchpanel
-    chown system system /sys/touchpanel/double_tap
 
 #Peripheral manager
 service vendor.per_mgr /system/vendor/bin/pm-service
